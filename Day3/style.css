@@ -1,0 +1,48 @@
+.icons,
+.icons2 {
+	animation: iconanimation ease-in-out 1s forwards;
+	transform: translateX(50%);
+	opacity: 0;
+}
+.icons:nth-of-type(2) {
+	animation-delay: 100ms;
+}
+.icons:nth-of-type(3) {
+	animation-delay: 200ms;
+}
+.icons2:nth-of-type(1) {
+	animation-delay: 300ms;
+}
+.icons2:nth-of-type(2) {
+	animation-delay: 400ms;
+}
+.icons2:nth-of-type(3) {
+	animation-delay: 500ms;
+}
+.paragraph,
+.title {
+	animation: textanimation ease-in-out 1s forwards;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+.paragraph {
+	animation-delay: 500ms;
+}
+@keyframes iconanimation {
+	0% {
+		transform: translateX(50%);
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes textanimation {
+	0% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
