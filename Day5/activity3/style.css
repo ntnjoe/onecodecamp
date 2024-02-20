@@ -1,12 +1,67 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--red: rgba(235, 49, 52);
+	--blue: rgba(52, 166, 235);
+	--yellow: rgba(235, 232, 52);
 }
 .container {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	position: relative;
 }
 canvas {
-	background-color: rgb(77, 77, 77);
+	background-color: rgb(9, 9, 9);
+	z-index: 0;
+}
+.radioBtns {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	z-index: 1;
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+input[type="radio"] {
+	display: none;
+}
+input[type="radio"] + label {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+}
+input[type="radio"]:checked + label {
+	opacity: 1;
+	border: 6px solid rgb(255, 255, 255);
+}
+.red {
+	background-color: var(--red);
+	opacity: 0.5;
+}
+.blue {
+	background-color: var(--blue);
+	opacity: 0.5;
+}
+.yellow {
+	background-color: var(--yellow);
+	opacity: 0.5;
+}
+button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: white;
+	opacity: 0.5;
+	border: none;
+}
+button:hover {
+	opacity: 1;
 }

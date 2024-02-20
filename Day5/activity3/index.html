@@ -8,14 +8,19 @@
 	</head>
 	<body>
 		<div class="container">
-			<canvas id="myCanvas">
-				<input type="radio" name="color" id="yellow" />
-				<!-- #EBE834 -->
-				<input type="radio" name="color" id="red" />
-				<!-- #EB3134 -->
-				<input type="radio" name="color" id="blue" />
-				<!-- #34A6EB -->
-			</canvas>
+			<div class="radioBtns">
+				<input type="radio" value="#EBE834" class="radiobtn" name="color" id="yellow" checked />
+				<label for="yellow" class="yellow"></label>
+				<!--  -->
+				<input type="radio" value="#EB3134" class="radiobtn" name="color" id="red" />
+				<label for="red" class="red"></label>
+				<!--  -->
+				<input type="radio" value="#34A6EB" class="radiobtn" name="color" id="blue" />
+				<label for="blue" class="blue"></label>
+				<!--  -->
+				<button id="reset"></button>
+			</div>
+			<canvas id="myCanvas"> </canvas>
 		</div>
 
 		<script src="script.js"></script>
