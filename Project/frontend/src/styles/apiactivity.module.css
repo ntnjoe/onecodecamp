@@ -1,0 +1,28 @@
+.mainContainer {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.jokeContainer {
+	border-radius: 0.3rem;
+	max-width: 300px;
+	border: 1px solid rgb(230, 230, 230);
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	color: rgb(230, 230, 230);
+}
+.btn {
+	border: 1px solid rgba(230, 230, 230, 0.5);
+	color: var(--white-color-high);
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+	background: rgba(0, 0, 0, 1);
+}
+
+.errorMessage {
+	color: rgb(229, 55, 55);
+}
